@@ -1,0 +1,16 @@
+<div class="page">
+    <div class="ui-fluid default-form">
+        <div class="logo">
+            <img src="assets/template/logo.svg" />
+        </div>
+        <input pInputText type="text" placeholder="Nome" [(ngModel)]="cliente.nome"/>
+        <input pInputText type="text" placeholder="Email" [(ngModel)]="cliente.email"/>
+        <input pPassword type="password" placeholder="Senha" [(ngModel)]="cliente.senha"/>
+        <input pPassword type="password" placeholder="Confirmar Senha" [(ngModel)]="confirmacaoSenha"/>
+        <div class="buttons">
+            <a [routerLink]="['/login']">Cancelar</a>
+            <button pButton label="Confirmar" (click)="registrar()"></button>
+        </div>
+    </div>
+</div>
+<!-- </form> -->

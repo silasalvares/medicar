@@ -1,0 +1,13 @@
+<div class="page">
+    <div class="ui-fluid default-form">
+        <div class="logo">
+            <img src="assets/template/logo.svg" />
+        </div>
+        <input pInputText type="text" placeholder="Email ou Login" [(ngModel)]="usuario.username" />
+        <input pInputText type="password" placeholder="Senha" [(ngModel)]="usuario.password" />
+        <div class="buttons">
+            <a [routerLink]="['/registro']" >Criar Conta</a>
+            <button pButton label="Acessar" (click)="login()"></button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="ui-fluid">
+    <div class="p-grid forms-grid default-form">
+        <div class="p-col-12 p-md-6">
+            <p-dropdown [options]="especialidades" [(ngModel)]="especialidadeSelecionada"
+                optionLabel="nome" placeholder="Especialidade" (onChange)=carregarAgendas()></p-dropdown>
+        </div>
+        <div class="p-col-12 p-md-6">
+            <p-dropdown [options]="medicos" [(ngModel)]="medicoSelecionado"
+                optionLabel="nome" placeholder="Médico" (onChange)="carregarAgendasMedico()"
+                [disabled]="!(medicos?.length > 0)"></p-dropdown>
+        </div>
+        <div class="p-col-12 p-md-6">
+            <p-dropdown [options]="agendasMedico" [(ngModel)]="agendaSelecionada"
+                [disabled]="!(agendasMedico?.length > 0)" optionLabel="dia" placeholder="Data" 
+                (onChange)="carregarHorariosAgenda()"></p-dropdown>
+        </div>
+        <div class="p-col-12 p-md-6">
+            <p-dropdown [options]="horariosAgenda" [(ngModel)]="horarioSelecionado"
+                [disabled]="!(horariosAgenda?.length > 0)" placeholder="Horário"></p-dropdown>    
+        </div>
+        <div class="bottom-bar">
+            <div class="p-grid">
+                <div class="p-col-6 p-md-6">
+                    <button pButton class="button-blank" type="button" (click)="cancelar()"
+                        label="Cancelar"></button>
+                </div>
+                <div class="p-col-6 p-md-6">
+                    <button pButton type="button" (click)="agendarConsulta()"
+                        label="Confirmar"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

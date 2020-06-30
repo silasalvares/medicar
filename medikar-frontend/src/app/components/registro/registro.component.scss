@@ -1,0 +1,34 @@
+.page {
+    width: 30%;
+    height: 100%;
+    padding-top: 180px;
+}
+
+.page .logo {
+    margin-bottom: 30px;
+}
+
+.page input {
+    margin-bottom: 15px;
+}
+
+.default-form {
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.buttons button {
+    width: 50%;
+}
+
+.buttons a {
+    padding-top: 8px;
+    width: 50%;
+    text-align: center;
+}
+

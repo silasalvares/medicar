@@ -3,23 +3,23 @@
 Construção de um sistema para uma clínica chamada Medicar com o intuito de auxiliar seus clientes na marcação de consultas e gerenciar seu corpo médico.
 
 Requisitos:
-    - O cliente da clínica pode criar uma conta no sistema
-    - O cliente da clínica pode se autenticar no sistema
-    - O cliente pode marcar uma consulta
-        - Não deve ser possível marcar consultas para um dia e horário não disponível ou já alocado para outro cliente
-        - Não deve ser possível marcar consultas para dia e horário passados
-        - Não deve ser possível marcar consultas para um dia horário na qual o paciente já tem uma consulta marcada
-    - O cliente pode desmarcar uma consulta
-        - Não deve ser possível desmarcar uma consulta que já aconteceu
-    - O cliente pode visualizar as suas consultas marcadas que ainda não aconteceram
-    - O gestor da clínica pode cadastrar especialidades médicas
-    - O gestor da clínica pode cadastrar médicos
-    - O gestor da clínica pode alocar médicos em horários específicos de um dia
+  - O cliente da clínica pode criar uma conta no sistema
+  - O cliente da clínica pode se autenticar no sistema
+  - O cliente pode marcar uma consulta
+    - Não deve ser possível marcar consultas para um dia e horário não disponível ou já alocado para outro cliente
+    - Não deve ser possível marcar consultas para dia e horário passados
+    - Não deve ser possível marcar consultas para um dia horário na qual o paciente já tem uma consulta marcada
+  - O cliente pode desmarcar uma consulta
+    - Não deve ser possível desmarcar uma consulta que já aconteceu
+  - O cliente pode visualizar as suas consultas marcadas que ainda não aconteceram
+  - O gestor da clínica pode cadastrar especialidades médicas
+  - O gestor da clínica pode cadastrar médicos
+  - O gestor da clínica pode alocar médicos em horários específicos de um dia
 
 ## Características da solução
 
-    - Backend: Python (Django); Banco de dados Relacional
-    - Frontend: Angular 9; Componentes Primeng;
+- Backend: Python (Django); Banco de dados Relacional
+- Frontend: Angular 9; Componentes Primeng;
 
 ## Passos para execução
 

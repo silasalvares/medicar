@@ -57,6 +57,9 @@ source env/bin/activate
 ```
 
 ### Execução do frontend
+##### Ambiente recomendado
+- Node v12.17.0
+- NPM 6.14.4
 ##### Instalação das dependências
 ```
 $ cd medicar-frontend
